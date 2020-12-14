@@ -101,7 +101,7 @@ public class SourceSinkUtils {
     }
 
     public static int getClientCacheSize(Map<String, String> parameters) {
-        String size = parameters.getOrDefault(PulsarOptions.CLIENT_CACHE_SIZE_OPTION_KEY, "5");
+        String size = parameters.getOrDefault(PulsarOptions.CLIENT_CACHE_SIZE_OPTION_KEY, "100");
         return Integer.parseInt(size);
     }
 
